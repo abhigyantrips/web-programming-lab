@@ -1,0 +1,101 @@
+<!-- A simple calculator with textboxes and buttons. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" lang="javascript">
+        $(document).ready(function () {
+            var firstNumber = document.getElementById('firstNumber')
+            var secondNumber = document.getElementById('secondNumber')
+
+            $('button').click(function () {
+                if (!firstNumber.value || !secondNumber.value) {
+                    alert('Please enter both inputs for calculation.');
+                    return;
+                }
+            })
+
+            $('#add').click(function () {
+                if (firstNumber.value && secondNumber.value)
+                    alert('Result is ' + (Number(firstNumber.value) + Number(secondNumber.value)));
+            })
+            $('#subtract').click(function () {
+                if (firstNumber.value && secondNumber.value)
+                    alert('Result is ' + (Number(firstNumber.value) - Number(secondNumber.value)));
+            })
+            $('#multiply').click(function () {
+                if (firstNumber.value && secondNumber.value)
+                    alert('Result is ' + (Number(firstNumber.value) * Number(secondNumber.value)));
+            })
+            $('#divide').click(function () {
+                if (firstNumber.value && secondNumber.value)
+                    alert('Result is ' + (Number(firstNumber.value) / Number(secondNumber.value)));
+            })
+        })
+    </script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            align-items: center;
+            gap: 1rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .calculator-container {
+            display: flex;
+            flex-direction: column;
+            background-color: lightgrey;
+            border-radius: 1rem;
+            padding: 2rem
+        }
+
+        .calculator-buttons {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        input {
+            padding: 0.25rem;
+        }
+
+        button {
+            padding: 0.5rem;
+            border-width: 0;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            color: white;
+            background-color: chocolate;
+        }
+
+        button:hover {
+            background-color: orange;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body style="background-color: white;">
+    <div class="calculator-container">
+        <h3 style="margin: 0; margin-bottom: 0.5rem;">Calculator</h3>
+        <label for="firstNumber">First Number</label>
+        <input id="firstNumber" />
+        <label for="secondNumber">Second Number</label>
+        <input id="secondNumber" />
+    </div>
+    <div class="calculator-buttons">
+        <button id="add">Add</button>
+        <button id="subtract">Subtract</button>
+        <button id="multiply">Multiply</button>
+        <button id="divide">Divide</button>
+    </div>
+</body>
+
+</html>
