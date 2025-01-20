@@ -1,0 +1,83 @@
+<!-- A button that moves the table/image via animate. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script type="text/javascript" lang="javascript">
+            $(document).ready(function() {
+                $("#moveItems").click(function() {
+                    $("table").animate({ left: '250px' }, 'slow');
+                    $("img").animate({ left: '250px' }, 'slow');
+                })
+            })
+        </script>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                margin: 2rem 0;
+                gap: 2rem;
+            }
+
+            th, td {
+                padding: 0.5rem;
+            }
+
+            table, img {
+                position: relative;
+            }
+
+            img {
+                width: 10rem;
+                height: 10rem;
+                border-radius: 1rem;
+            }
+
+            button {
+                padding: 0.5rem;
+                border-width: 0;
+                border-radius: 0.5rem;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                color: white;
+                background-color: chocolate;
+            }
+
+            button:hover {
+                background-color: orange;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body style="background-color: white;">
+        <table>
+            <tr style="background-color: darkgrey;">
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+            </tr>
+            <tr style="background-color: lightgrey;">
+                <td>Item 1</td>
+                <td>Item 2</td>
+                <td>Item 3</td>
+            </tr>
+            <tr style="background-color: darkgrey;">
+                <td>Item 4</td>
+                <td>Item 5</td>
+                <td>Item 6</td>
+            </tr>
+            <tr style="background-color: lightgrey;">
+                <td>Item 7</td>
+                <td>Item 8</td>
+                <td>Item 9</td>
+            </tr>
+        </table>
+        <img src="https://cdn3.pixelcut.app/7/20/uncrop_hero_bdf08a8ca6.jpg" alt="Test Image" />
+        <button id="moveItems">Move Items</button>
+    </body>
+</html>
