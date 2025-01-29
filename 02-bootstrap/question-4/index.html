@@ -1,0 +1,108 @@
+<!-- Class Timetable -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table Carousel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <style>
+        .honors {
+            background-color: lightgreen !important;
+            font-weight: bold;
+        }
+
+        .lab {
+            background-color: lightsalmon !important;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Class Timetable</h2>
+        <table class="table table-bordered text-center align-middle">
+            <thead>
+                <tr>
+                    <th class="text-start">DAYS</th>
+                    <th>9:00 - 9:50</th>
+                    <th>9:50 - 10:40</th>
+                    <th>10:50 - 11:40</th>
+                    <th>11.40 - 12:30</th>
+                    <th>LUNCH</th>
+                    <th>13:00 - 13:50</th>
+                    <th>13:50 - 14:40</th>
+                    <th>14:50 - 15:40</th>
+                    <th>15:40 - 16:30</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" class="text-start">Monday</th>
+                    <td class="honors">ADS</td>
+                    <td colspan="2" class="lab">WP Lab. (10.00 - 12.00)</td>
+                    <td></td>
+                    <td></td>
+                    <td>PE2 (BDA)</td>
+                    <td>CS</td>
+                    <td>PE1 (All)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-start">Tuesday</th>
+                    <td>CS</td>
+                    <td>EEFM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="4" class="lab">Open Elective (14.00 - 16.30)</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-start">Wednesday</th>
+                    <td>AC</td>
+                    <td>PE1 (All)</td>
+                    <td>PE2 (BDA)</td>
+                    <td></td>
+                    <td></td>
+                    <td>EEFM</td>
+                    <td colspan="2" class="lab">AC Lab. (14.00 - 16.00)</td>
+                    <td class="honors">ADS</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-start">Thursday</th>
+                    <td>EEFM</td>
+                    <td colspan="2" class="lab">CSF Lab. (10.00 - 12.00)</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>AC</td>
+                    <td>PE1 (All)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-start">Friday</th>
+                    <td>PE2 (BDA)</td>
+                    <td>AC</td>
+                    <td></td>
+                    <td>CS</td>
+                    <td></td>
+                    <td class="honors">ADS</td>
+                    <td class="honors">ADS</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>

@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Manipal University Login</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="Login Page made for Web Programming Lab, 2025.">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link rel="stylesheet" href="./styles.css" />
 
-        <!-- Testing -->
+<head>
+    <title>Manipal University Login</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Login Page made for Web Programming Lab, 2025.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <script>
-            window.onload = function() {
-                let form = document.getElementById('loginForm');
+    <link rel="stylesheet" href="./styles.css" />
 
-                form?.addEventListener('submit', (e) => {
-                    e.preventDefault();
+    <!-- Testing -->
 
-                    let username = document.getElementById('username');
-                    let password = document.getElementById('password');
+    <script>
+        window.onload = function () {
+            let form = document.getElementById('loginForm');
 
-                    if (username.value === '225891022' && password.value === '225891022') {
-                        alert('Login successful!')
-                    } else {
-                        alert('Incorrect username or password.');
-                    }
+            form?.addEventListener('submit', (e) => {
+                e.preventDefault();
 
-                    username.value = "";
-                    password.value = "";
-                })
-            }
-        </script>
-    </head>
-    <body style="background-color: antiquewhite; margin: 0;">
-        <img src="./assets/mahe-logo.png" alt="MAHE Logo" class="mahe-logo" />
-        <div class="flex-container">
-            <div class="login-container">
-                <h2 style="margin-top: 0;">Login</h2>
-                <form id="loginForm" class="form-container">
-                    <label for="username" class="form-label-style">Registration Number</label>
-                    <input type="text" id="username" placeholder="225891022" class="form-input-style">
-                    <label for="password" class="form-label-style">Password</label>
-                    <input type="password" id="password" class="form-input-style">
-                    <br>
-                    <button type="submit" class="form-submit-style">Submit</button>
-                </form>
-            </div>
+                let username = document.getElementById('username');
+                let password = document.getElementById('password');
+
+                if (username.value === '225891022' && password.value === '225891022') {
+                    alert('Login successful!')
+                } else {
+                    alert('Incorrect username or password.');
+                }
+
+                username.value = "";
+                password.value = "";
+            })
+        }
+    </script>
+</head>
+
+<body style="background-color: antiquewhite; margin: 0;">
+    <img src="./assets/mahe-logo.png" alt="MAHE Logo" class="mahe-logo" />
+    <div class="flex-container">
+        <div class="login-container">
+            <h2 style="margin-top: 0;">Login</h2>
+            <form id="loginForm" class="form-container">
+                <label for="username" class="form-label-style">Registration Number</label>
+                <input type="text" id="username" placeholder="225891022" class="form-input-style">
+                <label for="password" class="form-label-style">Password</label>
+                <input type="password" id="password" class="form-input-style">
+                <br>
+                <button type="submit" class="form-submit-style">Submit</button>
+            </form>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
